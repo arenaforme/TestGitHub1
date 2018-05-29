@@ -10,23 +10,14 @@ using System.Windows.Forms;
 
 namespace PowerPointAddIn1
 {
-    public partial class UserControl1 : UserControl
+    public partial class UserControl2 : UserControl
     {
-        public UserControl1()
+        public UserControl2()
         {
             InitializeComponent();
         }
 
-        public UserControl1(string v)
-        {
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Test");
-        }
-
-        private void UserControl1_Load(object sender, EventArgs e)
+        private void UserControl2_Load(object sender, EventArgs e)
         {
 
         }

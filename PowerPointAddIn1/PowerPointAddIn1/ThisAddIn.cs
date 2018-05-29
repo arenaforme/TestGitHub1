@@ -15,10 +15,12 @@ namespace PowerPointAddIn1
     {
 
         internal Microsoft.Office.Tools.CustomTaskPane helpTaskPane;
+
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
-            helpTaskPane = Globals.ThisAddIn.CustomTaskPanes.Add(new UserControl1(""), "Excel Help");
+            helpTaskPane = Globals.ThisAddIn.CustomTaskPanes.Add(new UserControl2(), "Excel Help");
             helpTaskPane.Visible = true;
+            helpTaskPane.DockPosition = Office.MsoCTPDockPosition.msoCTPDockPositionLeft;
         }
         
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
