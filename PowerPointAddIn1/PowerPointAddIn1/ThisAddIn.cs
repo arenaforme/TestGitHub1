@@ -3,17 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml.Linq;
+using System.Windows.Forms;
 using PowerPoint = Microsoft.Office.Interop.PowerPoint;
 using Office = Microsoft.Office.Core;
+using System.ComponentModel;
+using Microsoft.Office.Tools.Ribbon;
 
 namespace PowerPointAddIn1
 {
     public partial class ThisAddIn
     {
+
+        public Office.CustomTaskPane _MyCustomTaskPane = null;
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
-        }
+            
 
+        }
+        
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
         {
         }
