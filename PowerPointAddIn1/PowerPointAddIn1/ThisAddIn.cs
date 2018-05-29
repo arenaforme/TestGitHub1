@@ -14,11 +14,11 @@ namespace PowerPointAddIn1
     public partial class ThisAddIn
     {
 
-        public Office.CustomTaskPane _MyCustomTaskPane = null;
+        internal Microsoft.Office.Tools.CustomTaskPane helpTaskPane;
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
-            
-
+            helpTaskPane = Globals.ThisAddIn.CustomTaskPanes.Add(new UserControl1(""), "Excel Help");
+            helpTaskPane.Visible = true;
         }
         
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)

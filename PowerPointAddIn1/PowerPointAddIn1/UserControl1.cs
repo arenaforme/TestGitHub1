@@ -16,5 +16,19 @@ namespace PowerPointAddIn1
         {
             InitializeComponent();
         }
+
+        public UserControl1(string v)
+        {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test");
+        }
+
+        private void UserControl1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
